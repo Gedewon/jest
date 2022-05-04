@@ -1,4 +1,4 @@
-const stringLength = require("./index");
+const { stringLength, reverseString } = require("./index");
 
 test("count of gedi should be 4", () => {
   // AAA pattern
@@ -25,4 +25,12 @@ test("string is at between >10 should throw", () => {
   //act and asset
 
   expect(() => stringLength(element)).toThrow(Error);
+});
+test("reverse simple string", () => {
+  // arrange
+  let element = "Gedewon";
+
+  //act and asset
+
+  expect(reverseString(element)).toBe("nowedeG");
 });
