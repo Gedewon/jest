@@ -49,4 +49,14 @@ describe("Calculator class", () => {
   test("divide  method for multiple values ", () => {
     expect(Calculator.divide(4, 2, 2)).toBe(1);
   });
+
+  test("multiply  method for identity", () => {
+    expect(Calculator.multiply(1, 1)).toBe(1);
+  });
+  test("multiply  method for two values ", () => {
+    expect(Calculator.multiply(2, 3)).toBe(6);
+  });
+  test("multiply  method for multiple input ", () => {
+    expect(Calculator.multiply(2, 3, 3)).toBe(18);
+  });
 });
