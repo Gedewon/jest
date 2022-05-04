@@ -60,3 +60,8 @@ describe("Calculator class", () => {
     expect(Calculator.multiply(2, 3, 3)).toBe(18);
   });
 });
+
+test("Capitalize string ", () => {
+  let str = "gedewon";
+  expect(Capitalize(str)).toEqual("Gedewon");
+});
