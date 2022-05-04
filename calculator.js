@@ -8,7 +8,9 @@ class Calculator {
       .reduce((accumelator, curent) => accumelator - curent, input[0]);
   }
   static divide(...input) {
-    return input.reduce((accumelator, curent) => accumelator / curent, 0);
+    return input
+      .slice(1)
+      .reduce((accumelator, curent) => accumelator / curent, input[0]);
   }
   static multiply(...input) {
     return input.reduce((accumelator, curent) => accumelator * curent, 1);

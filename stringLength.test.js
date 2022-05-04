@@ -39,4 +39,14 @@ describe("Calculator class", () => {
   test("subtract method with zero", () => {
     expect(Calculator.subtract(2, 2)).toBe(0);
   });
+
+  test("divide  method for identity", () => {
+    expect(Calculator.divide(2, 2)).toBe(1);
+  });
+  test("divide  method for 4/2 to be 2", () => {
+    expect(Calculator.divide(4, 2)).toBe(2);
+  });
+  test("divide  method for multiple values ", () => {
+    expect(Calculator.divide(4, 2, 2)).toBe(1);
+  });
 });
