@@ -7,7 +7,11 @@ const stringLength = (str) => {
 
 const reverseString = (str) => str.split("").reverse().join("");
 
+const Capitalize = ([firstLetter, ...rest]) =>
+  firstLetter.toLocaleUpperCase() + rest.join("");
+
 module.exports = {
   stringLength,
   reverseString,
+  Capitalize,
 };

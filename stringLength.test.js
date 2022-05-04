@@ -1,4 +1,4 @@
-const { stringLength, reverseString } = require("./index");
+const { stringLength, reverseString, Capitalize } = require("./index");
 const Calculator = require("./calculator");
 
 test("count of gedi should be 4", () => {
