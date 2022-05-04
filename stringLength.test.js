@@ -23,7 +23,20 @@ describe("Calculator class", () => {
   test("add method", () => {
     expect(Calculator.add(1, 2)).toBe(3);
   });
+  test("add method more than two", () => {
+    expect(Calculator.add(1, 2, 3)).toBe(6);
+  });
+  test("add method with zero", () => {
+    expect(Calculator.add(0, 2)).toBe(2);
+  });
   test("subtract method", () => {
+    expect(Calculator.subtract(2, 2)).toBe(0);
+  });
+  test("subtract method multiple", () => {
     expect(Calculator.subtract(2, 2, 1)).toBe(-1);
+  });
+
+  test("subtract method with zero", () => {
+    expect(Calculator.subtract(2, 2)).toBe(0);
   });
 });
